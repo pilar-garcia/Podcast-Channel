@@ -315,11 +315,28 @@ body{
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         font-family: 'IBM Plex Sans';
         font-weight: 600;
     }
+
+    #top img:first-child {
+        margin-top: 37px;
+    }
+
+    #top p {
+        margin-bottom: 65px;
+    }
+    
+    #top p:last-child {
+        margin-bottom: 42px;
+    }
+
     .contentop{
-        margin: 4% 0 4% 0;
+        height: 104px;
+        width: 104px;
+       margin-bottom: 13px;
     }
 
     /*NOVEDADES QUEDA TORCIDO EL SECTION */
