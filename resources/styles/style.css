@@ -144,8 +144,25 @@ body{
         margin: 0 auto;
         transition: all 0.3s ease;
       }
-      #menu-toggle:checked + #menu {
+      #menu-toggle:checked ~ #menu {
         max-height: 100px;
+      }
+
+      .expandable {
+        visibility: collapse;
+        background: #ddd;
+      }
+
+      .collapsable {
+          visibility: visible;
+      }
+
+      #menu-toggle:checked ~ .expandable {
+        visibility: visible;
+      }
+
+      #menu-toggle:checked ~ .collapsable {
+        display: none;
       }
 
     /*main*/
