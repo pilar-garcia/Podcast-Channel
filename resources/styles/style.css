@@ -26,99 +26,20 @@ body{
         flex-direction: column;
     }
     .logo{
-        padding-left: 5%;
-        margin-top:5%;
+        padding: 10px 10px 10px 16px;
         width: 24px;
         height: 24px;
     }
-    .menu-button, .cierre {
-      display: block;
-      margin: 1em;
-      width: 24px;
-      background-color: white;
-      border: none;
-    }
-    .cierre:before, .cierre:after, .menu-button:before,
-    .menu-button:after {
-      display: block;
-      transition: all 200ms ease-in-out;
-    }
-    .cierre:before {
-      display: block;
-      transition: all 200ms ease-in-out; 
-    }
-    .cierre:after{
-      display: block;
-      transition: all 200ms ease-in-out;
-    }
-    .menubox, .menu-button, .cierre {
-      position: absolute;  
-      box-sizing: border-box;
-      margin: 3%;
-      padding: 0;
-      right: 2%;
-      top: 2%;
-      width: 24px;
-      height: 24px;  
-    }
-    .menu-button, .cierre {
-      font-size: 24px;
-      pointer-events: none;
-    }
-    .menubox {
-      opacity: 0; 
-    }
-    .menubox{
-        float: right;
-    }
-    .menubox:checked ~ nav {
-      display: block;
-    }
-    .menubox:checked ~ .menu {
-      display: none;
-    }
-    .menubox:not(:checked) ~ .cierre {
-      display: none;
-    }
-    nav{
-        margin-top:26px;
-        float: right;
-        display: none;
-        background: #0000EC;
-    }
-    nav ul li{
-        flex-direction: column;
-        text-decoration: none;
-        height: 28px;
-        padding: 1%;
-        padding-top: 3%;
-    }
-    nav ul li a{
-        color: #fff;
-        font-size: 16px;
-        padding-left: 28px;
-        text-decoration: none;
-        letter-spacing: 0;
-        line-height: 28px;
-    }
-    nav ul li a:hover{
-        font-family: 'IBM Plex Mono';
-        font-weight: 500;
-        color: #0000EC;
-        text-decoration: underline;
-    }
-    nav ul li a:active{
-        font-family: 'IBM Plex Mono';
-        color: rgba(6,10,36,0.56);
-        text-decoration: line-through;
-    }
-
-    /* nav*/
+   
+    /* menu hamburguesa desplegable  /cierre
+    debi colocar un padding superior 12px y no 19px ya que el tamaño sobrepasaba
+    */
       label {
         cursor: pointer;
+        padding: 12px 19px 16px 0;
       }
-      #content {
-        background-color: #9acd32;
+      .menu-width{
+        width: 18px;
       }
       label, #content {
         height: 20px;
@@ -136,7 +57,7 @@ body{
         position: absolute;
         left: 0;
         top: 44px;
-        background-color: #ffa500;
+        background-color:#0000EC;
         width: 100%;
         overflow: hidden;
         max-height: 0;
@@ -144,21 +65,25 @@ body{
         margin: 0 auto;
         transition: all 0.3s ease;
       }
+      #menu li a{
+          color: #FFFFFF;
+          text-decoration: none;
+      }
       #menu-toggle:checked ~ #menu {
         max-height: 100px;
       }
 
       .expandable {
-        visibility: collapse;
+        display: none;
         background: #ddd;
       }
 
       .collapsable {
-          visibility: visible;
+          display: inline;
       }
 
       #menu-toggle:checked ~ .expandable {
-        visibility: visible;
+        display: inline;
       }
 
       #menu-toggle:checked ~ .collapsable {
@@ -169,7 +94,6 @@ body{
 
     /*HOLA*/
     #principal{
-        margin-top: 120px;
         margin-left: 13%;
         margin-right: 13%;
     }
@@ -183,11 +107,13 @@ body{
         text-decoration: line-through;
     }
     .punto{
-        color: blue;
+        color: #060A24;
     }
     .description{
         color: #060A24;
         letter-spacing: 0;
+        text-align: justify;
+        margin-top: 16px;
         
     }
     .moreinf{
@@ -202,7 +128,7 @@ body{
     }
     #moreinf{   
         font-size: 16px;
-        margin-top: 56px;
+        margin-top: 36px;
         letter-spacing: 0;
         text-align: center;
         line-height: 24px;
@@ -213,9 +139,9 @@ body{
     }
 
     /*episodios spoty*/
-    /*REVISAR PORQUE NO SE ALINEA SPOTIFY se organizo el html*/
+
     #episodios{
-        margin-top: 80px;
+        margin-top: 30px;
         padding-left: 7%;
         padding-right: 7%;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -223,7 +149,7 @@ body{
         width: auto;
         display: flex;
         overflow: hidden;
-        padding-bottom: 5%;
+        padding-bottom: 30%;
     }
 
     .episodios{
@@ -238,7 +164,6 @@ body{
     }
     .episkew{
         transform: skew(0, 5deg);
-
     }
         
     .spotify{
@@ -251,22 +176,16 @@ body{
         
      /*TELEFONO Y DE DONDE VENIMOS*/   
 
-    #nosotros{
-        z-index: 1;
-        position: sticky;
-        width: auto;
-        margin-top: -5%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+
     .phone{
-        width: 100%;
-        height: auto;
+        width: 360px;
+        height: 519px;
         flex: 1;
     }
-    img{
+    .phone img{
         width: 100%;
+        position: relative;
+        top: -83px;
     }
     .about{
         width: auto;
@@ -284,6 +203,7 @@ body{
     }
     .about p{
         margin-bottom: 15px;
+        text-align: justify;
     }
     
     /*ENTREVISTAS Y FOTOS*/
@@ -341,20 +261,29 @@ body{
 
     /*NOVEDADES QUEDA TORCIDO EL SECTION */
     #novedades {
-        position: relative;
-        padding-top: 5%;
-        overflow: hidden;
+        width: 100%;
+        height: 100%;
       }
-      .nov {
-        position: absolute;
-        top: 0;
+
+      .blue-angle{
+        position: relative;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        transform: skewY(-3deg);
+        height: 50px;
+      }
+
+      .contentnov {
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        top: -37px;
         bottom: 0;
         right: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        transform: skewY(-6deg);
+        padding: 30px 0 67px 0;
+        text-align: center;
+        position: relative;
+        
         transform-origin: bottom right;
       }
       .titlenov {
@@ -362,25 +291,21 @@ body{
           color: white;
           font-family: 'IBM Plex Sans', sans-serif;
           font-weight: 400;
-          font-size: 36px;  
+          font-size: 36px; 
       }
       .contentnov .moreinf{
-          margin-top: 2%;
+          margin-top: 36px;
           width: 74%;   
-      }
-      .contentnov{
-          padding: 10% 0;
-          text-align: center;
-          position: relative;
       }
      
       /*FOOTER CON ICONOS*/
 
-      #footer{
+    #footer{
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
     .networks{
         display: flex;
         flex-direction: row;
