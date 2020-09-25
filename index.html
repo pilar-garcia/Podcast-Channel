@@ -13,7 +13,7 @@
 <body>
     <header class="flex space-between">
         <div>
-            <img class="logo" src="resources/images/logo.svg" alt=""/>
+            <img class="logo" src="resources/images/logo.svg" alt="logo"/>
         </div>
         <div class="container">
             <input id="menu-toggle" type="checkbox">
@@ -25,46 +25,48 @@
             </label>
             
             <ul id="menu">
-                <li><a href="#episodios">EPISODIOS</a></li>
-                <li><a href="#nosotros">NOSOTROS</a></li>
-                <li><a href="#invitados">ENTREVISTAS</a></li>
-                <li><a href="#topicos">TÓPICOS</a></li>
+                <li><a href="#episodes">EPISODIOS</a></li>
+                <li><a href="#us">NOSOTROS</a></li>
+                <li><a href="#interviews">ENTREVISTAS</a></li>
+                <li><a href="#topics">TÓPICOS</a></li>
             </ul>
             
         </div>
     </header>
     <main>
-        <section id="principal">
-            <h1>Hello <span class="tachado"> world</span> pale blue dot <span class="punto">.</span></h1>
+        <section id="intro">
+            <h1>Hello <span class="cross"> world</span> pale blue dot <span class="dot">.</span></h1>
             <p class="description">Un podcasts que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
             <p class="wide-description"> El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
             <button class="moreinf" id="moreinf">CONOCÉ MÁS</button>
         </section>
-        <section id="episodios" >
+        <section id="episodes" >
             <article class="episkew">
-                <h2 class="episodios">Episodios</h2>
+                <h2 class="episodestitle">Episodios</h2>
             <div>
                 <iframe class="spotify" title="spotify podcast show" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"></iframe>
                 <iframe class="spotify" title="spotify episode 1" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
                 <iframe class="spotify" title="spotify episode 2" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></iframe>
-                <iframe class="spotify" title="spotify episode 2" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
+                <iframe class="spotify" title="spotify episode 3" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
             </div>
 
             </article> 
         </section>
-        <section id="nosotros">
+        <section id="us">
             <article class="phone">
                 <img src="resources/images/phone.png" alt="Teléfono" >
             </article>
-            <article class="about">
-                <h2>De donde venimos</h2>
-                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
-                <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            <article class="aboutus">
+                <h2>De dónde venimos</h2>
+                <div>
+                    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+                    <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+                </div>
             </article>
         </section>
-        <section id="invitados">
+        <section id="interviews">
             <article >
-                <h2 class="interview">Invitadas/os estelares</h2>
+                <h2 class="interviewtitle">Invitadas/os estelares</h2>
                 <div class="interviewphotos">
                     <img class="photos" src="resources/images/grace-hopper.png" alt="Grace Hopper">
                     <img class="photos" src="resources/images/Margaret_Hamilton.png" alt="Margaret Hamilton">
@@ -76,24 +78,29 @@
             </article>
 
         </section>
-        <section id="topicos">
-            <h2 class="interview">Algunos de nuestros temas</h2>
+        <section id="topics">
+            <h2 class="topicstitle">Algunos de nuestros temas</h2>
             <div id="top" >
-                <img class="contentop" src="resources/images/icon1.svg" alt="Trabajo remoto">
-                <p>Trabajo remoto</p>
-                
-                <img class="contentop" src="resources/images/icon2.svg" alt="Repensando la programación">
-                <p>Repensando la programación</p>
-                
-                <img class="contentop" src="resources/images/icon3.svg" alt="Bases del código">
-                <p>Bases del código</p>
-                
-                <img class="contentop" src="resources/images/icon4.svg" alt="Seguridad informática">
-                <p>Seguridad informática</p>
+                <div>
+                    <img class="contentop" src="resources/images/icon1.svg" alt="Trabajo remoto">
+                    <p>Trabajo remoto</p>
+                </div>
+                <div>
+                    <img class="contentop" src="resources/images/icon2.svg" alt="Repensando la programación">
+                    <p>Repensando la programación</p>
+                </div>
+                <div>
+                    <img class="contentop" src="resources/images/icon3.svg" alt="Bases del código">
+                    <p>Bases del código</p>
+                </div>
+                <div>
+                    <img class="contentop" src="resources/images/icon4.svg" alt="Seguridad informática">
+                    <p>Seguridad informática</p>
+                </div>
             </div>
 
         </section>
-        <section id="novedades">
+        <section id="novelties">
             <div class="blue-angle"></div>
             <article class="contentnov">
                 <h2 class="titlenov">¿Querés las últimas novedades?</h2>
