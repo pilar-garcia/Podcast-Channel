@@ -355,16 +355,15 @@ label{
     display: none;
 }
 
-#menu li{
+#menu {
     display: flex;
-    flex-flow: row wrap;
-    float: right;
-    justify-content: flex-end;
+}
+
+#menu li{
     padding: 26px 28px 26px;
     list-style: none;
     font-size: 16px;
 }
-
 
 
 /* SECTION INTRO - hello*/
@@ -430,6 +429,7 @@ h1{
 .phone img{
     top: -113px;
     height: 660px;
+    width: auto;
 }
 
 #us{
