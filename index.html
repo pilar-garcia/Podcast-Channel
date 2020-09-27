@@ -11,98 +11,112 @@
     <title>sketch podcast</title>
 </head>
 <body>
-    <header>
+    <header class="flex space-between">
         <div>
-            <img class="logo" src="resources/images/logo.svg" alt=""/>
+            <img class="logo" src="resources/images/logo.svg" alt="logo"/>
         </div>
         <div class="container">
-            <input type="checkbox" class="menubox">
-            <button class="menu-button">
-                <i class="fas fa-bars" aria-hidden="true"></i>
-            </button>
-            <button class="cierre">
-                <i class="fas fa-times" aria-hidden="true"></i>
-            </button>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#episodios">EPISODIOS</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li><a href="#entrevistas">ENTREVISTAS</a></li>
-                    <li><a href="#topicos">TÓPICOS</a></li>
-                </ul>
-            </nav>
+            <input id="menu-toggle" type="checkbox">
+            <label for="menu-toggle" class="collapsable">
+                <i class="fas fa-bars menu-width" aria-hidden="true"></i>    
+            </label>
+            <label for="menu-toggle" class="expandable">
+                <i class="fas fa-times" aria-hidden="true"></i>    
+            </label>
+                <nav id="menu">
+                    <ul >
+                        <li><a href="#episodes">EPISODIOS</a></li>
+                        <li><a href="#us">NOSOTROS</a></li>
+                        <li><a href="#interviews">ENTREVISTAS</a></li>
+                        <li><a href="#topics">TÓPICOS</a></li>
+                    </ul>
+                </nav>
+            
         </div>
     </header>
     <main>
-        <section id="principal">
-            <h1>Hello <span class="tachado"> world</span> pale blue dot <span class="punto">.</span></h1>
-            <p class="description">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+        <section id="intro">
+            <h1>Hello <span class="cross"> world</span> pale blue dot <span class="dot">.</span></h1>
+            <p class="description">Un podcasts que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p class="wide-description"> El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
             <button class="moreinf" id="moreinf">CONOCÉ MÁS</button>
         </section>
-        <section id="episodios" >
-            <article class="episkew">
-                <h2 class="episodios">Episodios</h2>
+        <section id="episodes" >
+            <h2 class="episkew episodestitle">Episodios</h2>
+            <div class="episkew episodes-container">
             <div>
                 <iframe class="spotify" title="spotify podcast show" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"></iframe>
                 <iframe class="spotify" title="spotify episode 1" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
+            </div>
+            <div>
                 <iframe class="spotify" title="spotify episode 2" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></iframe>
-                <iframe class="spotify" title="spotify episode 2" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
+                <iframe class="spotify" title="spotify episode 3" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
             </div>
 
-            </article>
-            
+            </div> 
         </section>
-        <section class="nosotros">
-            <article class="phone">
+        <div id="us">
+            <aside class="phone">
                 <img src="resources/images/phone.png" alt="Teléfono" >
+            </aside>
+            <article class="aboutus">
+                <h2>De dónde venimos</h2>
+                <div>
+                    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+                    <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+                </div>
             </article>
-            <article class="about">
-                <h2>De donde venimos</h2>
-                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
-                <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-            </article>
-        </section>
-        <section id="invitados">
-            <article >
-                <h2 class="interview">Invitadas/os estelares</h2>
-                <div class="interviewphotos">
+        </div>
+        <section id="interviews">
+            <h2 class="interviewtitle">Invitadas/os estelares</h2>
+            <div class="interviewphotos">
+                <div>
                     <img class="photos" src="resources/images/grace-hopper.png" alt="Grace Hopper">
                     <img class="photos" src="resources/images/Margaret_Hamilton.png" alt="Margaret Hamilton">
                     <img class="photos" src="resources/images/Katie-Bouman.png" alt="Katie Bouman">
-                    <img class="photos" src="resources/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A Univac 1103 computer">
-                    <img class="photos" src="resources/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators">
+                </div>
+                <div>
+                    <img class="photos" src="resources/images/ERA1103.png" alt="An E.R.A Univac 1103 computer">
+                    <img class="photos" src="resources/images/firstGeneralPurposeComputer.png" alt="Computer operators">
                     <img class="photos" src="resources/images/susan-kare.png" alt="Susan Kare">
                 </div>
-            </article>
-
+            </div>
         </section>
-        <section id="topicos">
-            <h2>Algunos de nuestros temas</h2>
+        <section id="topics">
+            <h2 class="topicstitle">Algunos de nuestros temas</h2>
             <div id="top" >
-                <img class="contentop" src="resources/images/icon1.svg" alt="Trabajo remoto">
-                <p>Trabajo remoto</p>
-                
-                <img class="contentop" src="resources/images/icon2.svg" alt="Repensando la programación">
-                <p>Repensando la programación</p>
-                
-                <img class="contentop" src="resources/images/icon3.svg" alt="Bases del código">
-                <p>Bases del código</p>
-                
-                <img class="contentop" src="resources/images/icon4.svg" alt="Seguridad informática">
-                <p>Seguridad informática</p>
+                <div>
+                    <img class="contentop" src="resources/images/icon1.svg" alt="Trabajo remoto">
+                    <p>Trabajo remoto</p>
+                </div>
+                <div>
+                    <img class="contentop" src="resources/images/icon2.svg" alt="Repensando la programación">
+                    <p>Repensando la programación</p>
+                </div>
+                <div>
+                    <img class="contentop" src="resources/images/icon3.svg" alt="Bases del código">
+                    <p>Bases del código</p>
+                </div>
+                <div>
+                    <img class="contentop" src="resources/images/icon4.svg" alt="Seguridad informática">
+                    <p>Seguridad informática</p>
+                </div>
             </div>
 
         </section>
-        <section id="novedades">
-            <article class="nov contentnov">
+        <div id="novelties">
+            <div class="blue-angle"></div>
+            <article class="contentnov">
                 <h2 class="titlenov">¿Querés las últimas novedades?</h2>
-                <button class="moreinf">ESCUCHÁ LOS EPISODIOS</button>
+                <div>
+                    <button class="moreinf">ESCUCHÁ LOS EPISODIOS</button>
+                </div>
             </article>
 
-        </section>
+        </div>
 
     </main>
-    <footer>
+    <footer id="footer">
         <p class="copyright">© 2019— Hello blue pale dot </p>
         <div class="networks">
             <a rel="noopener noreferrer" href="http://www.spotify.com" title="Spotify" class="net" target="_blank"><em class="fab fa-spotify c"></em></a>
