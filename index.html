@@ -23,12 +23,14 @@
             <label for="menu-toggle" class="expandable">
                 <i class="fas fa-times" aria-hidden="true"></i>    
             </label>
-                <ul id="menu">
-                    <li><a href="#episodes">EPISODIOS</a></li>
-                    <li><a href="#us">NOSOTROS</a></li>
-                    <li><a href="#interviews">ENTREVISTAS</a></li>
-                    <li><a href="#topics">TÓPICOS</a></li>
-                </ul>
+                <nav id="menu">
+                    <ul >
+                        <li><a href="#episodes">EPISODIOS</a></li>
+                        <li><a href="#us">NOSOTROS</a></li>
+                        <li><a href="#interviews">ENTREVISTAS</a></li>
+                        <li><a href="#topics">TÓPICOS</a></li>
+                    </ul>
+                </nav>
             
         </div>
     </header>
@@ -40,8 +42,8 @@
             <button class="moreinf" id="moreinf">CONOCÉ MÁS</button>
         </section>
         <section id="episodes" >
-            <article class="episkew">
-                <h2 class="episodestitle">Episodios</h2>
+            <h2 class="episkew episodestitle">Episodios</h2>
+            <div class="episkew episodes-container">
             <div>
                 <iframe class="spotify" title="spotify podcast show" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"></iframe>
                 <iframe class="spotify" title="spotify episode 1" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
@@ -51,12 +53,12 @@
                 <iframe class="spotify" title="spotify episode 3" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
             </div>
 
-            </article> 
+            </div> 
         </section>
-        <section id="us">
-            <article class="phone">
+        <div id="us">
+            <aside class="phone">
                 <img src="resources/images/phone.png" alt="Teléfono" >
-            </article>
+            </aside>
             <article class="aboutus">
                 <h2>De dónde venimos</h2>
                 <div>
@@ -64,24 +66,21 @@
                     <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
                 </div>
             </article>
-        </section>
+        </div>
         <section id="interviews">
-            <article >
-                <h2 class="interviewtitle">Invitadas/os estelares</h2>
-                <div class="interviewphotos">
-                    <div>
-                        <img class="photos" src="resources/images/grace-hopper.png" alt="Grace Hopper">
-                        <img class="photos" src="resources/images/Margaret_Hamilton.png" alt="Margaret Hamilton">
-                        <img class="photos" src="resources/images/Katie-Bouman.png" alt="Katie Bouman">
-                    </div>
-                    <div>
-                        <img class="photos" src="resources/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A Univac 1103 computer">
-                        <img class="photos" src="resources/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators">
-                        <img class="photos" src="resources/images/susan-kare.png" alt="Susan Kare">
-                    </div>
+            <h2 class="interviewtitle">Invitadas/os estelares</h2>
+            <div class="interviewphotos">
+                <div>
+                    <img class="photos" src="resources/images/grace-hopper.png" alt="Grace Hopper">
+                    <img class="photos" src="resources/images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                    <img class="photos" src="resources/images/Katie-Bouman.png" alt="Katie Bouman">
                 </div>
-            </article>
-
+                <div>
+                    <img class="photos" src="resources/images/ERA1103.png" alt="An E.R.A Univac 1103 computer">
+                    <img class="photos" src="resources/images/firstGeneralPurposeComputer.png" alt="Computer operators">
+                    <img class="photos" src="resources/images/susan-kare.png" alt="Susan Kare">
+                </div>
+            </div>
         </section>
         <section id="topics">
             <h2 class="topicstitle">Algunos de nuestros temas</h2>
@@ -105,7 +104,7 @@
             </div>
 
         </section>
-        <section id="novelties">
+        <div id="novelties">
             <div class="blue-angle"></div>
             <article class="contentnov">
                 <h2 class="titlenov">¿Querés las últimas novedades?</h2>
@@ -114,7 +113,7 @@
                 </div>
             </article>
 
-        </section>
+        </div>
 
     </main>
     <footer id="footer">
