@@ -7,10 +7,7 @@ font-family: 'IBM Plex Mono', monospace;
 font-size: 14px;
 width: 100%;
 }   
-/* utils 
-
-
-*/
+/* UTILS */
 
 .flex{
     display: flex;
@@ -24,21 +21,20 @@ a{
 }
 
 
-
-/*header
+/*HEADER -MENU*/
 
 .container{
     display: flex;
     flex-direction: column;
 }
+
 .logo{
     padding: 10px 10px 10px 16px;
     width: 24px;
     height: 24px;
 }
 
-/* menu hamburguesa desplegable  /cierre
-debi colocar un padding superior 12px y no 19px ya que el tamaño sobrepasaba
+/* menu hamburguesa desplegable  /cierre*/
 
 label {
     cursor: pointer;
@@ -88,12 +84,12 @@ label {
 #menu-toggle:checked ~ .collapsable {
     display: none;
 }
-*/
 
 
-/*main*/
 
-/*HOLA*/
+/*MAIN*/
+
+/*SECTION INTRO -HELLO*/
 #intro{
     margin-left: 13%;
     margin-right: 13%;
@@ -149,7 +145,8 @@ h1{
     color: #ffffff;
 }
 
-/*episodios spoty*/
+/*SECTION EPISODES -SPOTIFY*/
+
 #episodes{
     margin-top: 30px;
     padding-left: 7%;
@@ -164,7 +161,7 @@ h1{
 
 .episodestitle{
     padding-top: 10%;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans';
     font-size: 36px;
     color: #FFFFFF;
     font-weight: 400;
@@ -184,23 +181,27 @@ h1{
     overflow: hidden;
 }
     
-    /*TELEFONO Y DE DONDE VENIMOS*/   
+/*SECTION US -PHONE*/  
+
 .phone{
     width: 360px;
     height: 519px;
     flex: 1;
 }
+
 .phone img{
     width: 100%;
     position: relative;
     top: -83px;
 }
+
 .aboutus{
     width: auto;
     padding-left: 13%;
     padding-right: 13%;
     flex: 1;   
 }
+
 .aboutus h2{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
@@ -209,16 +210,19 @@ h1{
     margin-bottom: 24px;
     font-weight: 400;
 }
+
 .aboutus div p{
     margin-bottom: 15px;
     text-align: justify;
 }
 
-/*ENTREVISTAS Y FOTOS*/
+
+/*SECTION INTERVIEWS -PHOTOS*/
 
 #interviews{
     width: 100%; 
 }
+
 .interviewtitle{
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
@@ -227,20 +231,23 @@ h1{
     padding-bottom: 36px;
     padding-top: 3%;
 }
+
 .photos{
-        flex: 1;
-        width: 100%;
-    }
+    flex: 1;
+    width: 100%;
+}
+
 .interviewphotos{
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
 }
 
-/*TOPICOS QUEDAN GRANDES Y MAL DISTRIBUIDOS*/
+
+/*SECTION TOPICS -ICON*/
 
 .topicstitle{
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans';
     font-weight: 400;
     font-size: 36px;
     padding-left: 13%;
@@ -276,12 +283,12 @@ h1{
     margin-bottom: 13px;
 }
 
-/*NOVEDADES QUEDA TORCIDO EL SECTION */
+/*SECTION NOVELTIES -BUTTON */
 
 #novelties {
     width: 100%;
     height: 100%;
-    }
+}
 
 .blue-angle{
     position: relative;
@@ -301,22 +308,23 @@ h1{
     padding: 30px 0 67px 0;
     text-align: center;
     position: relative;
-
     transform-origin: bottom right;
 }
+
 .titlenov {
     margin: 0;
     color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans';
     font-weight: 400;
     font-size: 36px; 
 }
+
 .contentnov .moreinf{
     margin-top: 36px;
     width: 74%;   
 }
     
-    /*FOOTER CON ICONOS*/
+/*SECTION FOOTER -COPYRIGHT-HREF*/
 
 #footer{
     display: flex;
@@ -330,46 +338,104 @@ h1{
     margin-bottom: 0;
     padding-top: 2%;
 }
+
 .net{
     flex:1;
 }
+
 .c{
     color: #060A24;
     padding: 1%;
 }
 
 @media all and (min-width:800px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-/*HEADER MENU*/
+    main, header{
+        width: 800px;
+    }
+
+    /*HEADER -MENU*/
 
 .logo{
-    padding: 22px 0 22px 100px;
-    width: 36px;
-    height: 36px;
-}
-#menu-toggle{
-    display: none;
+    padding: 10px 0 20px 30px;
+    width: 30px;
+    height: 30px;
 }
 
 label{
     display: none;
 }
 
+#menu-toggle{
+    display: none;
+}
+
 #menu {
     display: flex;
+    position: inherit;
+    background-color:#FFFFFF;
+    width: auto;
+    overflow: auto;
+    max-height: none;
+    padding: 0;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+#menu li a{
+    color: #060A24;
+    text-decoration: none;
+}
+
+.collapsable{
+    display: none;
 }
 
 #menu li{
-    padding: 26px 28px 26px;
+    padding: 20px 22px 20px;
     list-style: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
+#menu li a:hover{
+    color: #00F3BB;
+    font-family: 'IBM Plex Mono';
+    font-weight: 500;
+    text-decoration:line-through ;
+}
 
-/* SECTION INTRO - hello*/
+#menu li a:active{
+    color:rgba(6,10,36,0.56);
+    font-family: 'IBM Plex Mono';
+    text-decoration:line-through;
+}
+
+/*MAIN*/
+
+/* SECTION INTRO -HELLO*/
 
 #intro{
-    margin-left: 200px;
+    margin-left: 100px;
+}
+
+h1{
+    font-size: 58px;
+    padding-top: 80px;
+    font-family: 'IBM Plex Sans';
+}
+
+.dot {
+    color: #0000EC;
+}
+
+.cross{
+    color: #0000EC;
 }
 
 .description{
@@ -378,9 +444,288 @@ label{
 
 .wide-description{
     display: block;
-    font-size: 16px;
-    width: 628px;
+    font-size: 14px;
+    width: 400px;
+    text-align: justify;
+}
 
+.moreinf{
+    width: 150px;
+    height: 56px;
+    padding: 0;
+}
+
+#moreinf{   
+    font-size: 14px;
+    margin-top: 56px;
+}
+
+
+/* SECTION EPISODES -SPOTIFY */
+
+#episodes{
+    padding-bottom: 7%;
+}
+
+.episodestitle{
+    font-size: 40px;
+    font-family: 'IBM Plex Sans';
+}
+
+.spotify{
+    width: 336px;
+    padding: 0px 39px 39px 0;
+}
+
+#episodes div{
+    display: flex;
+}
+
+
+/* SECTION US */
+
+.phone{
+    margin-left: 40px;
+    height: 460px;   
+}
+
+.phone img{
+    top: -89px;
+    height: 560px;
+    width: auto;
+}
+
+#us{
+    display: flex;
+}
+
+.aboutus{
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 58px;
+}
+.aboutus h2{
+    font-size: 40px;
+    margin-top: 49px;
+}
+.aboutus div{
+    font-size: 14px;
+    width: 367px;
+    height: 204px;
+}
+
+
+/* SECTION INTERVIEWS */
+
+.interviewtitle{
+    font-size: 40px;
+}
+
+.photos{
+    width: 267px;
+    height: 256px;
+}
+
+.interviewphotos{
+    flex-direction:inherit;
+}
+
+.interviewphotos div{
+    display: flex;
+}
+
+
+/* SECTION TOPICS */
+
+.topicstitle{
+    font-size: 40px;
+}
+
+#top{
+    flex-direction: inherit;
+    font-family: 'IBM Plex Sans';
+    font-weight:900;
+}
+
+.contentop{
+    width: 104px;
+    height: 87px;
+}
+
+#top div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top div p{
+    font-size: 14px;
+    font-family: 'IBM Plex Sans';
+    color: #060A24;
+}
+
+#top div p:nth-child(2n+1) {
+    margin-top: 16px;
+    width: 159px;
+    height: 32px;
+}
+
+#top div p:nth-child(2n){
+    margin-top: 16px;
+    margin-bottom: 13px;
+    width: 159px;
+    height: 64px;
+}
+
+
+/* SECTION NOVELTIES */
+
+#novelties{
+    height: 380px;
+}
+
+.titlenov{
+    font-size: 40px;
+    padding-top: 27px;
+}
+
+.blue-angle{
+    height: 80px;
+}
+
+.contentnov {
+    top: -40px;
+    height: 280px;
+    padding: 30px 0 0px 0;
+}
+
+.contentnov .moreinf{
+    margin-top: 36px;
+    margin-bottom: 151px;
+    width: 300px;
+    height: 56px; 
+    font-size: 14px;  
+}
+
+/* SECTION FOOTER */
+
+#footer{
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    text-align:inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0 31px 0;
+}
+
+.copyright{
+    padding-left: 100px;
+}
+
+.networks{
+    padding-top: 0;
+    padding-right: 100px;
+}
+
+.networks a{
+    margin-right: 36px;
+}
+
+.networks a:last-child{
+    margin-right: 0;
+}
+
+.net{
+    flex:none;
+    width: 18px;
+    height: 28px;
+    
+}
+
+.c{
+    color: #060A24;
+    padding: 0
+}
+
+}
+
+
+@media all and (min-width:1440px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main, header{
+        width: 1440px;
+    }
+
+/*HEADER -MENU*/
+
+.logo{
+    padding: 22px 0 22px 100px;
+    width: 36px;
+    height: 36px;
+}
+
+label{
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+#menu {
+    display: flex;
+    position: inherit;
+    background-color:#FFFFFF;
+    width: auto;
+    overflow: auto;
+    max-height: none;
+    padding: 0;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+#menu li a{
+    color: #060A24;
+    text-decoration: none;
+}
+
+.collapsable{
+    display: none;
+}
+
+#menu li{
+    padding: 26px 28px 26px;
+    list-style: none;
+    font-size: 16px;
+}
+
+#menu li a:hover{
+    color: #00F3BB;
+    font-family: 'IBM Plex Mono';
+    font-weight: 500;
+    text-decoration:line-through ;
+}
+
+#menu li a:active{
+    color:rgba(6,10,36,0.56);
+    font-family: 'IBM Plex Mono';
+    text-decoration:line-through;
+}
+
+/*MAIN*/
+
+/* SECTION INTRO -HELLO*/
+
+#intro{
+    margin-left: 200px;
 }
 
 h1{
@@ -393,12 +738,18 @@ h1{
     color: #0000EC;
 }
 
-#moreinf{   
-    font-size: 18px;
-    margin-top: 56px;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 24px;
+.cross{
+    color: #060A24;
+}
+
+.description{
+    display: none;
+}
+
+.wide-description{
+    display: block;
+    font-size: 16px;
+    width: 628px;
 }
 
 .moreinf{
@@ -407,23 +758,38 @@ h1{
     padding: 0;
 }
 
-/* SECTION EPISODIOS */
-
-.spotify{
-    width: 43%;
-    padding: 3%;
+#moreinf{   
+    font-size: 18px;
+    margin-top: 56px;
 }
+
+
+/* SECTION EPISODES -SPOTIFY */
 
 #episodes{
     padding-bottom: 7%;
 }
 
+.episodestitle{
+    font-size: 48px;
+    font-family: 'IBM Plex Sans';
+}
 
-/* SECTION NOSOTROS */
+.spotify{
+    width: 584px;
+    height: 232px;
+    padding: 26px 72px 72px 0;
+}
+
+#episodes div{
+    display: flex;
+}
+
+
+/* SECTION US */
 
 .phone{
-    margin-left: 200px;
-    
+    margin-left: 200px;   
 }
 
 .phone img{
@@ -450,6 +816,7 @@ h1{
 
 .interviewtitle{
     font-size: 48px;
+    padding-top: 98px;
 }
 
 .photos{
@@ -461,6 +828,10 @@ h1{
     flex-direction:inherit;
 }
 
+.interviewphotos div{
+    display: flex;
+}
+
 
 /* SECTION TOPICS */
 
@@ -468,26 +839,109 @@ h1{
     font-size: 48px;
 }
 
+#top{
+    flex-direction: inherit;
+    font-family: 'IBM Plex Sans';
+    font-weight:900;
+}
+
 .contentop{
     width: 260px;
     height: 130px;
 }
 
-#top{
-    flex-direction: inherit;
+#top div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #top div p{
+    font-size: 24px;
+    font-family: 'IBM Plex Sans';
+    color: #060A24;
+}
 
+#top div p:nth-child(2n+1) {
+    margin-top: 16px;
+    width: 220px;
+    height: 32px;
+}
+
+#top div p:nth-child(2n){
+    margin-top: 16px;
+    margin-bottom: 68px;
+    width: 220px;
+    height: 64px;
 }
 
 
+/* SECTION NOVELTIES */
 
+.titlenov{
+    font-size: 48px;
+    padding-top: 27px;
+}
 
-/* SECTION NOVEDADES */
+.blue-angle{
+    height: 80px;
+}
 
+.contentnov {
+    top: -40px;
+    height: 300px;
+    padding: 30px 0 0px 0;
+}
+
+.contentnov .moreinf{
+    margin-top: 36px;
+    margin-bottom: 151px;
+    width: 345px;
+    height: 56px; 
+    font-size: 18px;  
+}
 
 /* SECTION FOOTER */
+
+#footer{
+    display: flex;
+    width: 1440px;
+    flex-direction: row;
+    text-align:inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0 31px 0;
+}
+
+.copyright{
+    padding-left: 100px;
+}
+
+.networks{
+    padding-top: 0;
+    padding-right: 100px;
+}
+
+.networks a{
+    margin-right: 36px;
+}
+
+.networks a:last-child{
+    margin-right: 0;
+}
+
+.net{
+    flex:none;
+    width: 18px;
+    height: 28px;
+    
+}
+
+.c{
+    color: #060A24;
+    padding: 0
+}
 
 
 }
