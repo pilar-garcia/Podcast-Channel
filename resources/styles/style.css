@@ -91,15 +91,16 @@ label {
 
 /*SECTION INTRO -HELLO*/
 #intro{
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 h1{
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans';
     font-size: 36px;
     color: #060A24;
     letter-spacing: 0;
+    
 }
 
 .cross{
@@ -149,8 +150,6 @@ h1{
 
 #episodes{
     margin-top: 30px;
-    padding-left: 7%;
-    padding-right: 7%;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     transform: skew(0, -5deg);
     width: auto;
@@ -165,12 +164,17 @@ h1{
     font-size: 36px;
     color: #FFFFFF;
     font-weight: 400;
-    padding-left: 7%;
+    margin-left: 16px;
     padding-bottom: 26px;
 
 }
 .episkew{
     transform: skew(0, 5deg);
+}
+
+#episodes div{
+    padding-left: 11px;
+    padding-right: 11px;
 }
     
 .spotify{
@@ -184,8 +188,8 @@ h1{
 /*SECTION US -PHONE*/  
 
 .phone{
-    width: 360px;
-    height: 519px;
+    width: 320px;
+    height: 468px;
     flex: 1;
 }
 
@@ -197,8 +201,8 @@ h1{
 
 .aboutus{
     width: auto;
-    padding-left: 13%;
-    padding-right: 13%;
+    margin-left: 16px;
+    margin-right: 16px;
     flex: 1;   
 }
 
@@ -224,12 +228,13 @@ h1{
 }
 
 .interviewtitle{
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans';
     font-weight: 400;
     font-size: 36px;
-    padding-left: 13%;
-    padding-bottom: 36px;
-    padding-top: 3%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 14px;
+    padding-top: 54px;
 }
 
 .photos{
@@ -243,6 +248,11 @@ h1{
     flex-wrap:wrap;
 }
 
+.interviewphotos div{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /*SECTION TOPICS -ICON*/
 
@@ -250,9 +260,9 @@ h1{
     font-family: 'IBM Plex Sans';
     font-weight: 400;
     font-size: 36px;
-    padding-left: 13%;
-    padding-bottom: 36px;
-    padding-top: 3%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
 }
 
 #top{
@@ -265,15 +275,20 @@ h1{
     font-weight: 600;
 }
 
-#top div img:first-child {
+#top div:first-child img {
     margin-top: 37px;
 }
 
-#top div p {
-    margin-bottom: 65px;
+#top div:first-child p{
+    padding-bottom: 36px;
+    margin-bottom: 0px;
 }
 
-#top div p:last-child {
+#top div p {
+    margin-bottom: 52px;
+}
+
+#top div:last-child p {
     margin-bottom: 42px;
 }
 
@@ -316,12 +331,19 @@ h1{
     color: white;
     font-family: 'IBM Plex Sans';
     font-weight: 400;
-    font-size: 36px; 
+    font-size: 36px;
+    width: 288px;
+    height: 126px; 
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .contentnov .moreinf{
     margin-top: 36px;
-    width: 74%;   
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 22px;   
 }
     
 /*SECTION FOOTER -COPYRIGHT-HREF*/
@@ -329,18 +351,21 @@ h1{
 #footer{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
 .networks{
-    display: flex;
-    flex-direction: row;
     margin-bottom: 0;
     padding-top: 2%;
+    display: flex;
+}
+
+.net:first-child{
+    padding-left: 0px;
 }
 
 .net{
-    flex:1;
+    padding-left: 38px;
 }
 
 .c{
@@ -421,13 +446,13 @@ label{
 /* SECTION INTRO -HELLO*/
 
 #intro{
-    margin-left: 100px;
+    margin-left: 67px;
+    margin-right: 27px;
 }
 
 h1{
     font-size: 58px;
     padding-top: 80px;
-    font-family: 'IBM Plex Sans';
 }
 
 .dot {
@@ -445,7 +470,7 @@ h1{
 .wide-description{
     display: block;
     font-size: 14px;
-    width: 400px;
+    width: 530px;
     text-align: justify;
 }
 
@@ -456,7 +481,7 @@ h1{
 }
 
 #moreinf{   
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 56px;
 }
 
@@ -470,6 +495,7 @@ h1{
 .episodestitle{
     font-size: 40px;
     font-family: 'IBM Plex Sans';
+    margin-left: 67px;
 }
 
 .spotify{
@@ -478,6 +504,8 @@ h1{
 }
 
 #episodes div{
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
 }
 
@@ -519,6 +547,8 @@ h1{
 
 .interviewtitle{
     font-size: 40px;
+    padding-left: 67px;
+    padding-right: 27px;
 }
 
 .photos{
@@ -532,6 +562,7 @@ h1{
 
 .interviewphotos div{
     display: flex;
+    flex-direction: inherit;
 }
 
 
@@ -539,11 +570,12 @@ h1{
 
 .topicstitle{
     font-size: 40px;
+    padding-left: 67px;
+    padding-right: 27px;
 }
 
 #top{
     flex-direction: inherit;
-    font-family: 'IBM Plex Sans';
     font-weight:900;
 }
 
@@ -582,12 +614,12 @@ h1{
 /* SECTION NOVELTIES */
 
 #novelties{
-    height: 380px;
+    height: 370px;
 }
 
 .titlenov{
     font-size: 40px;
-    padding-top: 27px;
+    width: 360px;
 }
 
 .blue-angle{
@@ -595,14 +627,17 @@ h1{
 }
 
 .contentnov {
-    top: -40px;
     height: 280px;
-    padding: 30px 0 0px 0;
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contentnov .moreinf{
     margin-top: 36px;
-    margin-bottom: 151px;
+    margin-bottom: 80px;
     width: 300px;
     height: 56px; 
     font-size: 14px;  
@@ -617,7 +652,7 @@ h1{
     text-align:inherit;
     display: flex;
     justify-content: space-between;
-    padding: 7px 0 31px 0;
+    padding: 7px 0 7px 0;
 }
 
 .copyright{
@@ -627,6 +662,7 @@ h1{
 .networks{
     padding-top: 0;
     padding-right: 100px;
+    display: block;
 }
 
 .networks a{
@@ -641,7 +677,7 @@ h1{
     flex:none;
     width: 18px;
     height: 28px;
-    
+    padding-left: 0px;
 }
 
 .c{
@@ -846,8 +882,7 @@ h1{
 }
 
 .contentop{
-    width: 260px;
-    height: 130px;
+   width: 104px;
 }
 
 #top div {
@@ -855,6 +890,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 260px;
 }
 
 #top div p{
@@ -882,6 +918,7 @@ h1{
 .titlenov{
     font-size: 48px;
     padding-top: 27px;
+    width: 692px;
 }
 
 .blue-angle{
@@ -890,7 +927,7 @@ h1{
 
 .contentnov {
     top: -40px;
-    height: 300px;
+    height: 334px;
     padding: 30px 0 0px 0;
 }
 
@@ -905,13 +942,8 @@ h1{
 /* SECTION FOOTER */
 
 #footer{
-    display: flex;
     width: 1440px;
-    flex-direction: row;
-    text-align:inherit;
-    display: flex;
-    justify-content: space-between;
-    padding: 7px 0 31px 0;
+    padding: 58px 0 23px 0;
 }
 
 .copyright{
